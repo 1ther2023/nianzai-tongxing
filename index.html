@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>廿载同行 · 三扬开泰 | 中国人寿上市二十周年新品首发</title>
+<meta name="description" content="中国人寿上市二十周年新品首发：国寿S基金与南向通双引擎，快返型分红保险，两年只交三次。">
+<meta property="og:title" content="廿载同行 · 三扬开泰"><meta property="og:image" content="assets/shot_12.jpg">
+<style>
+@font-face{font-family:HS;src:url("assets/hs.woff") format("woff");font-display:block}
+@font-face{font-family:NS;src:url("assets/ns.woff") format("woff");font-weight:100 900;font-display:swap}
+:root{--gold:#e8c36a;--gold2:#fff1c4;--red:#8e0f0a;--ink:#0b0202;--blue:#8cc8ff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{font-family:NS,"PingFang SC","Microsoft YaHei",sans-serif;color:#fff;background:var(--ink);overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block}
+#veil{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 45%,rgba(0,0,0,.6) 100%)}
+main{position:relative;z-index:2}
+.gold{background:linear-gradient(100deg,#9a6a1c 0%,#e8c36a 18%,#fff4cf 30%,#e2b451 42%,#a8741f 52%,#e8c36a 64%,#fffbe9 74%,#e2b451 84%,#9a6a1c 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite}
+.silver{background:linear-gradient(100deg,#7fb2ff 0%,#dff0ff 22%,#fff 34%,#9fcaff 48%,#e8f4ff 66%,#fff 76%,#7fb2ff 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite}
+@keyframes sh{to{background-position:300% 0}}
+.hs{font-family:HS,serif}
+.tt{color:#fffaf0;filter:drop-shadow(0 3px 0 rgba(80,12,0,.85)) drop-shadow(0 0 24px rgba(255,120,30,.45))}
+.kw{color:#ffd66b}
+.glow{filter:drop-shadow(0 0 24px rgba(255,180,80,.35)) drop-shadow(0 8px 20px rgba(0,0,0,.6))}
+.en{font-size:13px;letter-spacing:.8em;color:rgba(255,226,170,.7);text-transform:uppercase}
+.tag{display:inline-block;padding:7px 26px 7px 34px;border:1px solid rgba(240,200,110,.7);color:#f8dfa6;letter-spacing:.9em;font-size:15px;background:rgba(60,10,6,.45);clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.tag.blue{border-color:rgba(140,200,255,.8);color:#d6ecff;background:rgba(6,24,60,.5)}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;transition:background .4s,padding .4s}
+nav.solid{background:rgba(12,2,2,.72);backdrop-filter:blur(12px);padding:14px 5vw;border-bottom:1px solid rgba(240,200,110,.15)}
+nav .brand{display:flex;align-items:center;gap:14px;font-family:HS;letter-spacing:.3em;font-size:18px;color:#f3d493}
+nav .brand i{width:1px;height:18px;background:rgba(240,200,110,.6)}
+nav .brand span{font-family:NS;font-size:13px;letter-spacing:.4em;color:rgba(255,232,190,.8)}
+nav ul{display:flex;gap:34px;list-style:none}
+nav a{color:rgba(255,236,200,.8);text-decoration:none;font-size:14px;letter-spacing:.25em;transition:color .3s}
+nav a:hover{color:#fff}
+
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 6vw;position:relative}
+.wrap{width:min(1200px,100%)}
+.center{text-align:center}
+
+/* hero */
+#hero .wrap{text-align:center}
+#hero .t1{width:min(780px,86vw);filter:drop-shadow(0 0 40px rgba(255,160,60,.35)) drop-shadow(0 12px 28px rgba(0,0,0,.6))}
+#hero .t2{height:clamp(56px,8vw,96px);margin-top:10px;filter:drop-shadow(0 0 20px rgba(255,160,60,.45))}
+#hero .lead{margin-top:28px;font-size:clamp(18px,1.8vw,24px);letter-spacing:.45em;color:#f6dcaa}
+#hero .en{margin-top:16px}
+.btns{margin-top:46px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 38px;font-size:16px;letter-spacing:.3em;color:#2a0a02;background:linear-gradient(120deg,#c98f2c,#fff1c2 45%,#e2b451 70%,#b27a22);border:0;cursor:pointer;text-decoration:none;font-weight:700;clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:transform .25s,filter .25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.ghost{background:rgba(40,6,4,.5);color:#f8dfa6;box-shadow:inset 0 0 0 1px rgba(240,200,110,.7)}
+.btn svg{width:14px;height:14px}
+.scroll{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:.5em;color:rgba(255,226,170,.6);text-align:center}
+.scroll:after{content:"";display:block;width:1px;height:46px;margin:12px auto 0;background:linear-gradient(rgba(240,200,110,.8),transparent);animation:drop 2s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* story */
+.bigq{font-size:clamp(40px,6vw,92px);line-height:1.15;letter-spacing:.12em}
+.story p.sub{margin-top:30px;font-size:clamp(17px,1.6vw,22px);line-height:2;color:rgba(255,236,210,.85);letter-spacing:.2em}
+.yr{display:flex;align-items:baseline;justify-content:center;gap:10px}
+.yr .n{font-family:HS;font-size:clamp(120px,16vw,240px);line-height:1}
+.yr .u{font-family:HS;font-size:clamp(40px,4vw,64px)}
+
+/* engines */
+.head{margin-bottom:56px}
+.head h2{font-family:HS;font-size:clamp(40px,5vw,72px);letter-spacing:.2em;margin-top:18px}
+.head p{margin-top:16px;color:rgba(255,236,210,.8);letter-spacing:.25em;font-size:17px}
+.engines{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.eng{position:relative;padding:44px 44px 40px;background:linear-gradient(160deg,rgba(90,20,14,.42),rgba(20,4,4,.55));border:1px solid rgba(255,220,170,.28);overflow:hidden;border-radius:18px;backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 0 40px rgba(255,160,90,.08),0 30px 80px rgba(0,0,0,.5)}
+.eng:after,.feat div:after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:linear-gradient(120deg,rgba(255,60,90,.0) 20%,rgba(255,60,90,.7) 32%,rgba(255,220,80,.8) 38%,rgba(60,255,170,.7) 44%,rgba(60,160,255,.8) 50%,rgba(170,80,255,.6) 56%,rgba(255,255,255,0) 68%);background-size:300% 100%;animation:disp 6s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+@keyframes disp{from{background-position:100% 0}to{background-position:-200% 0}}
+.eng.b{background:linear-gradient(160deg,rgba(14,44,100,.42),rgba(3,8,24,.55));border-color:rgba(160,210,255,.3)}
+.eng:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:linear-gradient(#fff1c2,#a8741f)}
+.eng.b:before{background:linear-gradient(#e6f3ff,#3d7fe0)}
+.eng .k{font-size:13px;letter-spacing:.6em;color:rgba(255,226,170,.75)}
+.eng.b .k{color:rgba(170,215,255,.85)}
+.eng h3{font-family:HS;font-size:clamp(40px,4vw,60px);letter-spacing:.12em;margin:14px 0 8px}
+.eng .num{display:flex;align-items:baseline;gap:8px;margin:18px 0 6px}
+.eng .num b{font-family:HS;font-size:clamp(64px,7vw,104px);line-height:1;font-weight:400}
+.eng .num i{font-style:normal;font-family:HS;font-size:32px}
+.eng .num em{font-style:normal;margin-left:10px;color:rgba(255,236,210,.75);letter-spacing:.2em}
+.eng .desc{color:rgba(255,236,210,.82);line-height:1.9;letter-spacing:.12em;font-size:16px;margin-top:8px}
+.eng.b .desc{color:rgba(210,230,255,.85)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{padding:8px 18px;font-size:14px;letter-spacing:.2em;border:1px solid rgba(240,200,110,.45);background:rgba(255,200,120,.06)}
+.eng.b .chips span{border-color:rgba(140,200,255,.5);background:rgba(120,180,255,.07)}
+.eng .shot{margin-top:28px;height:170px;background-size:cover;background-position:center;opacity:.9;mask-image:linear-gradient(transparent,#000 30%,#000 70%,transparent)}
+.plus{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:40px;font-size:18px;letter-spacing:.4em;color:#f6dcaa}
+.plus:before,.plus:after{content:"";height:1px;width:120px;background:linear-gradient(90deg,transparent,rgba(240,200,110,.8),transparent)}
+
+/* product */
+.pay{margin:70px auto 0;max-width:980px;position:relative;height:190px}
+.rail{position:absolute;left:4%;right:4%;top:90px;height:2px;background:rgba(240,200,110,.2)}
+.rail i{position:absolute;left:0;top:-1px;height:4px;width:0;background:linear-gradient(90deg,#b27a22,#fff1c2);box-shadow:0 0 16px #ffb347;transition:width 1.8s cubic-bezier(.3,.7,.2,1)}
+.pay.on .rail i{width:100%}
+.node{position:absolute;top:0;width:180px;margin-left:-90px;text-align:center}
+.node .l1{font-size:17px;letter-spacing:.3em;color:#ffe2a6;padding:6px 14px;border:1px solid rgba(240,200,110,.55);background:rgba(20,6,4,.7);display:inline-block;opacity:0;transform:translateY(10px);transition:all .5s}
+.node .dot{width:22px;height:22px;border-radius:50%;margin:36px auto 0;background:#5a3a14;box-shadow:0 0 0 6px rgba(240,200,110,.08);transition:all .5s}
+.node .l2{margin-top:22px;font-size:14px;letter-spacing:.4em;color:rgba(255,226,170,.75);opacity:0;transition:opacity .5s}
+.pay.on .node .l1{opacity:1;transform:none}
+.pay.on .node .dot{background:#fff1c2;box-shadow:0 0 0 7px rgba(240,200,110,.25),0 0 34px 6px #ffb347}
+.pay.on .node .l2{opacity:1}
+.pay.on .node:nth-child(3) *{transition-delay:.55s}.pay.on .node:nth-child(4) *{transition-delay:1.15s}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.feat div{position:relative;padding:30px 28px;border-radius:14px;background:linear-gradient(160deg,rgba(90,20,14,.4),rgba(20,4,4,.55));border:1px solid rgba(255,220,170,.25);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 24px 60px rgba(0,0,0,.45)}
+.feat h4{font-family:HS;font-size:30px;letter-spacing:.14em;font-weight:400;color:#fff}
+.feat p{margin-top:12px;color:rgba(255,236,210,.8);line-height:1.8;letter-spacing:.1em;font-size:15px}
+
+/* film */
+.film{position:relative;margin-top:40px;border:1px solid rgba(240,200,110,.45);box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 60px rgba(255,150,60,.12)}
+.film video{display:block;width:100%;background:#000}
+.fplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:16px;padding:18px 40px 18px 26px;border:1px solid rgba(255,220,160,.6);border-radius:60px;background:rgba(40,6,4,.45);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;font:700 18px NS,sans-serif;letter-spacing:.3em;cursor:pointer;transition:transform .25s,background .25s,opacity .3s;box-shadow:0 0 40px rgba(255,150,60,.35)}
+.fplay svg{width:34px;height:34px;padding:9px;border-radius:50%;background:linear-gradient(120deg,#c98f2c,#fff1c2 45%,#e2b451);color:#5c0a03;box-sizing:content-box}
+.fplay:hover{transform:translate(-50%,-50%) scale(1.05);background:rgba(90,16,10,.6)}
+.film.playing .fplay{opacity:0;pointer-events:none}
+.fbar{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:14px;padding:14px 18px;background:linear-gradient(transparent,rgba(0,0,0,.7));opacity:0;transition:opacity .3s}
+.film.started:hover .fbar,.film.paused.started .fbar{opacity:1}
+.fbar button{background:none;border:0;color:#ffe2a6;cursor:pointer;width:26px;height:26px;padding:3px;flex:none}
+.fbar svg{width:100%;height:100%}
+.ftrack{flex:1;height:4px;background:rgba(255,255,255,.2);cursor:pointer;position:relative;border-radius:2px}
+.ftrack i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#b27a22,#fff1c2);box-shadow:0 0 10px #ffb347;border-radius:2px}
+.film:before,.film:after{content:"";position:absolute;width:40px;height:40px;border:2px solid var(--gold)}
+.film:before{left:-10px;top:-10px;border-right:0;border-bottom:0}
+.film:after{right:-10px;bottom:-10px;border-left:0;border-top:0}
+
+/* finale */
+#go .bigq{font-size:clamp(46px,7vw,110px)}
+#go .t2{height:clamp(60px,8vw,100px);margin-top:30px}
+footer{position:relative;z-index:2;padding:40px 6vw 50px;text-align:center;color:rgba(255,226,190,.45);font-size:12px;line-height:2;letter-spacing:.12em;border-top:1px solid rgba(240,200,110,.12);background:rgba(8,1,1,.7)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);filter:blur(8px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1),filter 1s}
+.rv.in{opacity:1;transform:none;filter:none}
+.rv.d1{transition-delay:.15s}.rv.d2{transition-delay:.3s}.rv.d3{transition-delay:.45s}.rv.d4{transition-delay:.6s}
+
+@media (max-width:860px){
+  nav ul{display:none}
+  .engines,.feat{grid-template-columns:1fr}
+  .node{width:110px;margin-left:-55px}.node .l1{font-size:13px;letter-spacing:.15em}
+}
+
+.contact{margin:46px auto 0;display:flex;gap:44px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:left}
+.contact .qr{position:relative;width:230px;padding:12px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,220,170,.35);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 0 50px rgba(255,150,60,.3),inset 0 1px 0 rgba(255,255,255,.3)}
+.contact .qr img{display:block;width:100%;border-radius:10px}
+.contact .qr:after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:linear-gradient(120deg,transparent 20%,rgba(255,60,90,.7) 32%,rgba(255,220,80,.8) 38%,rgba(60,255,170,.7) 44%,rgba(60,160,255,.8) 50%,transparent 64%);background-size:300% 100%;animation:disp 5s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.contact .cn{font-size:52px;letter-spacing:.2em;color:#fff;margin-top:10px}
+.contact .co{color:#ffd66b;letter-spacing:.25em;font-size:16px;margin-top:4px}
+.contact p{margin:18px 0 22px;color:rgba(255,236,210,.8);line-height:1.9;letter-spacing:.15em;font-size:15px}
+.navc{padding:6px 16px;border:1px solid rgba(240,200,110,.6);border-radius:20px;color:#ffe2a6!important}
+#qrm{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(8,1,1,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .35s}
+#qrm.on{opacity:1;pointer-events:auto}
+#qrm .card{position:relative;width:min(380px,86vw);border-radius:22px;overflow:hidden;background:#fff;box-shadow:0 0 80px rgba(255,150,60,.45),0 40px 100px rgba(0,0,0,.6);transform:scale(.9);transition:transform .35s cubic-bezier(.2,.8,.2,1.2)}
+#qrm.on .card{transform:none}
+#qrm .card img{display:block;width:100%}
+#qrm .x{position:absolute;top:10px;right:12px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.45);color:#fff;font-size:20px;cursor:pointer}
+#qrm .tip{position:absolute;left:0;right:0;bottom:-44px;text-align:center;color:#ffe2a6;letter-spacing:.3em;font-size:14px}
+@media (max-width:860px){.contact{gap:24px;text-align:center}.contact .ci{width:100%}#go .bigq{font-size:clamp(34px,10vw,46px);letter-spacing:.06em}#go{padding-top:90px}.bigq{letter-spacing:.06em}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas><div id="veil"></div>
+
+<nav id="nav">
+  <div class="brand">中国人寿<i></i><span>上市二十周年 · 新品首发</span></div>
+  <ul><li><a href="#story">廿载同行</a></li><li><a href="#engines">双引擎</a></li><li><a href="#product">快返分红</a></li><li><a href="#film">概念片</a></li><li><a href="#go" class="navc">联系顾问</a></li></ul>
+</nav>
+
+<main>
+  <section id="hero" data-shape="0">
+    <div class="wrap">
+      <div class="tag rv">中国人寿上市二十周年</div><br><br>
+      <img class="t1 rv d1" src="assets/title_nzt.png" alt="廿载同行">
+      <div><img class="t2 rv d2" src="assets/title_syt.png" alt="三扬开泰"></div>
+      <div class="lead rv d3">长钱长投 · 双擎驱动 · 与你同行</div>
+      <div class="en rv d3">China Life · 20th Anniversary · New Launch</div>
+      <div class="btns rv d4">
+        <a class="btn" href="#film"><svg viewBox="0 0 10 10"><path d="M1 0L10 5L1 10Z" fill="currentColor"/></svg>观看概念片</a>
+        <a class="btn ghost" href="#engines">探索双引擎</a>
+        <a class="btn ghost" href="#" data-qr>联系专属顾问</a>
+      </div>
+    </div>
+    <div class="scroll">SCROLL</div>
+  </section>
+
+  <section id="story" class="story" data-shape="1">
+    <div class="wrap center">
+      <div class="en rv">Twenty Years · Forging Ahead Together</div>
+      <div class="yr rv d1" style="margin-top:20px"><span class="n gold glow" data-count="20" data-from="1">1</span><span class="u gold">载</span></div>
+      <div class="bigq hs tt rv d2">国家长期资本的<span class="kw">压舱石</span></div>
+      <p class="sub rv d3">二十年前，中国人寿敲响登陆资本市场的钟声。<br>二十年风雨兼程，今天，我们带着二十年的积淀，再一次出发。</p>
+    </div>
+  </section>
+
+  <section id="engines" data-shape="2">
+    <div class="wrap">
+      <div class="head center">
+        <div class="tag rv">硬核资产 · 一路长虹</div>
+        <h2 class="tt rv d1">把最<span class="kw">硬核</span>的资产，带到你身边</h2>
+        <p class="rv d2">险资耐心深耕 · 一边是中国科创的澎湃动能，一边是全球市场的广阔视野</p>
+      </div>
+      <div class="engines">
+        <div class="eng rv d1">
+          <div class="k">ENGINE ONE · 第一引擎</div>
+          <h3 class="gold">国寿S基金</h3>
+          <div class="num"><b class="gold" data-count="246" data-from="12">12</b><i class="gold">亿</i><em>份额</em></div>
+          <div class="desc">重仓新质生产力。不赌早期，不追晚期，做科创企业最坚定的长期合伙人。</div>
+          <div class="chips"><span>人工智能</span><span>高端芯片</span><span>国产算力</span><span>沐曦 · 壁仞</span></div>
+          <div class="shot" style="background-image:url(assets/shot_45.jpg)"></div>
+        </div>
+        <div class="eng b rv d2">
+          <div class="k">ENGINE TWO · 第二引擎</div>
+          <h3 class="silver">南向通</h3>
+          <div class="num"><b class="silver" data-count="40" data-from="2">2</b><i class="silver">亿</i><em>稀缺额度</em></div>
+          <div class="desc">一条阳光大道，直通全球债券市场。国寿首批入场，多币种配置全球优质资产。</div>
+          <div class="chips"><span>美元</span><span>欧元</span><span>港币</span><span>全球债券</span></div>
+          <div class="shot" style="background-image:url(assets/shot_66.jpg)"></div>
+        </div>
+      </div>
+      <div class="plus rv">双引擎 · 同频共振</div>
+    </div>
+  </section>
+
+  <section id="product" data-shape="3">
+    <div class="wrap center">
+      <div class="tag rv">快返型分红保险</div>
+      <h2 class="bigq hs tt rv d1" style="margin-top:24px">两年，只交<span class="kw">三次</span></h2>
+      <p class="rv d2" style="margin-top:18px;letter-spacing:.3em;color:rgba(255,236,210,.85);font-size:18px">把你与国家战略、全球市场连接在一起</p>
+      <div class="pay" id="pay">
+        <div class="rail"><i></i></div>
+        <div class="node" style="left:12%"><div class="l1">第一次</div><div class="dot"></div><div class="l2">起步</div></div>
+        <div class="node" style="left:50%"><div class="l1">第二次</div><div class="dot"></div><div class="l2">满一年</div></div>
+        <div class="node" style="left:88%"><div class="l1">第三次</div><div class="dot"></div><div class="l2">满两年</div></div>
+      </div>
+      <div class="feat">
+        <div class="rv d1"><h4>资金占用<span class="kw">更短</span></h4><p>两年三次交清，规划更轻松，节奏更从容。</p></div>
+        <div class="rv d2"><h4>回馈来得<span class="kw">更快</span></h4><p>快返设计，让回馈更早走进生活。</p></div>
+        <div class="rv d3"><h4>成果<span class="kw">分红共享</span></h4><p>专业团队负责投资，投资成果通过分红与你共享。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="film" data-shape="1">
+    <div class="wrap center">
+      <div class="tag rv">概念片</div>
+      <h2 class="hs tt rv d1" style="font-size:clamp(36px,4.4vw,64px);letter-spacing:.2em;margin-top:20px">廿载同行 · <span class="kw">双擎启航</span></h2>
+      <div class="film rv d2" id="film-box">
+        <video id="fv" src="video/concept.mp4" poster="assets/shot_12.jpg" playsinline preload="metadata"></video>
+        <button class="fplay" id="fplay" aria-label="播放概念片"><svg viewBox="0 0 10 10"><path d="M2.5 1L9 5L2.5 9Z" fill="currentColor"/></svg><span>播放概念片</span></button>
+        <div class="fbar"><button id="fpp" aria-label="播放/暂停"><svg viewBox="0 0 10 10"><path id="fppi" d="M2.5 1L9 5L2.5 9Z" fill="currentColor"/></svg></button>
+          <div class="ftrack" id="ftrack"><i id="fprog"></i></div>
+          <button id="fmute" aria-label="静音"><svg viewBox="0 0 12 10"><path d="M1 3.5H3.5L6.5 1V9L3.5 6.5H1Z" fill="currentColor"/><path id="fwave" d="M8 3Q9.5 5 8 7M9.6 1.8Q12 5 9.6 8.2" stroke="currentColor" fill="none" stroke-width="1"/></svg></button>
+          <button id="ffs" aria-label="全屏"><svg viewBox="0 0 10 10"><path d="M1 3.5V1H3.5M6.5 1H9V3.5M9 6.5V9H6.5M3.5 9H1V6.5" stroke="currentColor" fill="none" stroke-width="1.2"/></svg></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="go" data-shape="4">
+    <div class="wrap center">
+      <div class="en rv">The Next Twenty Years</div>
+      <div class="bigq hs tt rv d1" style="margin-top:20px">下一个二十年<br>我们，<span class="kw">一起出发</span></div>
+      <div><img class="t2 rv d2" src="assets/title_syt.png" alt="三扬开泰" style="filter:drop-shadow(0 0 20px rgba(255,160,60,.45))"></div>
+      <div class="contact rv d3">
+        <div class="qr"><img src="assets/qrcode_sq.jpg" alt="中国人寿 覃瑛哲 微信二维码"></div>
+        <div class="ci">
+          <div class="en" style="letter-spacing:.5em">YOUR ADVISOR</div>
+          <div class="cn hs">覃瑛哲</div>
+          <div class="co">中国人寿 · 您的专属顾问</div>
+          <p>微信扫一扫，添加好友<br>了解廿载同行新品详情</p>
+          <a class="btn" href="#" data-qr>放大二维码</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="qrm" role="dialog" aria-label="顾问微信二维码"><div style="position:relative"><div class="card"><img src="assets/qrcode.jpg" alt="中国人寿 覃瑛哲 微信二维码"><button class="x" aria-label="关闭">×</button></div><div class="tip">长按或扫码添加微信</div></div></div>
+<footer>
+  中国人寿上市二十周年新品首发 · 概念介绍页<br>
+  本页面为概念展示，不构成任何投资建议或收益承诺。分红水平具有不确定性，具体保险责任及利益以正式保险合同条款为准。
+</footer>
+
+<script src="assets/three.classic.js"></script>
+<script>
+(async () => {
+const THREE = window.THREE;
+const cv = document.getElementById('bg');
+const renderer = new THREE.WebGLRenderer({ canvas: cv, antialias: true, alpha: false });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 500); camera.position.set(0, 0, 34);
+const mobile = innerWidth < 860, N = mobile ? 26000 : 52000;
+let seed = 7; const R = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+const gauss = () => Math.sqrt(-2 * Math.log(R() + 1e-9)) * Math.cos(6.283 * R());
+
+function glyph(text, width, yOff) {
+  const cw = 2200, ch = 520, c = document.createElement('canvas'); c.width = cw; c.height = ch;
+  const g = c.getContext('2d'); g.fillStyle = '#fff'; g.font = '420px HS, serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(text, cw / 2, ch / 2 + 20);
+  const d = g.getImageData(0, 0, cw, ch).data, pts = []; let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+  for (let y = 0; y < ch; y += 2) for (let x = 0; x < cw; x += 2) if (d[(y * cw + x) * 4 + 3] > 128) { pts.push(x, y); x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+  const s = width / (x1 - x0), cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, out = new Float32Array(N * 3), np = pts.length / 2;
+  for (let i = 0; i < N; i++) { const k = Math.floor(R() * np); out[i * 3] = (pts[k * 2] - cx) * s; out[i * 3 + 1] = -(pts[k * 2 + 1] - cy) * s + yOff; out[i * 3 + 2] = gauss() * .2; }
+  return out;
+}
+await document.fonts.load('420px HS', '廿载同行');
+const ring = new Float32Array(N * 3), twin = new Float32Array(N * 3), globe = new Float32Array(N * 3), dust = new Float32Array(N * 3), ar = new Float32Array(N * 4);
+const ga = Math.PI * (3 - Math.sqrt(5));
+for (let i = 0; i < N; i++) {
+  ar.set([R(), R(), R(), R()], i * 4);
+  { const a = R() * 6.283, u = R(); const r = u < .72 ? 9 + gauss() * .3 : u < .86 ? 6.3 + gauss() * .08 : 9 + Math.abs(gauss()) * 4; ring.set([Math.cos(a) * r, Math.sin(a) * r, gauss() * (u > .86 ? 1.2 : .25)], i * 3); }
+  { const sg = i % 2 ? 1 : -1, arm = Math.floor(R() * 3), rr = Math.pow(R(), .55) * 6.5, an = arm * 2.094 + rr * .95 + gauss() * .22; twin.set([sg * 11 + Math.cos(an) * rr, Math.sin(an) * rr * .85, Math.sin(an) * rr * .3], i * 3); }
+  { const k = i, y = 1 - 2 * (k + .5) / N, rr = Math.sqrt(1 - y * y), th = ga * k; globe.set([Math.cos(th) * rr * 10, y * 10, Math.sin(th) * rr * 10], i * 3); }
+  { const r = 6 + Math.pow(R(), .6) * 44, a = R() * 6.283; dust.set([Math.cos(a) * r, gauss() * 8, Math.sin(a) * r * .9 - 10], i * 3); }
+}
+const text = glyph('廿载同行', 32, 0);
+const shapes = [ring, text, twin, globe, ring];
+const g = new THREE.BufferGeometry();
+g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(N * 3), 3));
+g.setAttribute('pA', new THREE.BufferAttribute(ring.slice(), 3));
+g.setAttribute('pB', new THREE.BufferAttribute(ring.slice(), 3));
+g.setAttribute('pD', new THREE.BufferAttribute(dust, 3));
+g.setAttribute('aR', new THREE.BufferAttribute(ar, 4));
+const mat = new THREE.ShaderMaterial({
+  transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+  uniforms: { uT: { value: 0 }, uP: { value: 1 }, uBlueA: { value: 0 }, uBlueB: { value: 0 }, uDust: { value: 0 }, uPix: { value: 1 }, uH: { value: innerHeight } },
+  vertexShader: `uniform float uT,uP,uBlueA,uBlueB,uDust,uPix,uH; attribute vec3 pA,pB,pD; attribute vec4 aR; varying vec3 vC; varying float vA;
+    vec3 rZ(vec3 p,float a){float c=cos(a),s=sin(a);return vec3(c*p.x-s*p.y,s*p.x+c*p.y,p.z);}
+    void main(){ float l=clamp(uP*1.6-aR.x*.6,0.,1.); l=l*l*(3.-2.*l);
+      vec3 p=mix(pA,pB,l)+(aR.yzw*2.-1.)*sin(3.14159*l)*2.;
+      p+=vec3(sin(uT*.7+aR.x*30.),cos(uT*.6+aR.y*30.),0.)*.06;
+      float isD=step(.8,aR.w); p=mix(p,pD,isD*uDust);
+      float bl=mix(uBlueA,uBlueB,l); float tw=mix(bl, smoothstep(-3.,3.,p.x), step(1.5,bl)); bl=bl>1.5?tw:bl;
+      vec3 gold=mix(vec3(1.,.36,.06),vec3(1.,.74,.3),aR.y); vec3 blue=mix(vec3(.1,.38,1.),vec3(.5,.8,1.),aR.y);
+      vC=mix(gold,blue,clamp(bl,0.,1.)); if(aR.z>.94) vC=vec3(1.,.95,.85);
+      vec4 mv=modelViewMatrix*vec4(p,1.); gl_Position=projectionMatrix*mv;
+      gl_PointSize=.085*(.4+aR.z*aR.z*1.6)*uH*uPix/-mv.z; vA=.62*(.6+.4*sin(uT*(2.+aR.w*3.)+aR.x*60.)); }`,
+  fragmentShader: `varying vec3 vC; varying float vA; void main(){ float d=length(gl_PointCoord-.5); float a=smoothstep(.5,0.,d); gl_FragColor=vec4(vC*a*a*vA,1.); }`,
+});
+const pts = new THREE.Points(g, mat); pts.frustumCulled = false; scene.add(pts);
+const bgm = new THREE.Mesh(new THREE.SphereGeometry(200, 32, 16), new THREE.ShaderMaterial({
+  side: THREE.BackSide, uniforms: { uB: { value: 0 } },
+  vertexShader: `varying vec3 vD; void main(){ vD=position; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader: `uniform float uB; varying vec3 vD; void main(){ vec3 d=normalize(vD); float g=pow(max(-d.z,0.),3.);
+    vec3 r=vec3(.03,.004,.003)+vec3(.24,.03,.012)*g; vec3 b=vec3(.003,.008,.028)+vec3(.02,.08,.26)*g; gl_FragColor=vec4(mix(r,b,uB),1.); }`,
+})); scene.add(bgm);
+// lasers sweeping the ground
+const NL = mobile ? 10 : 16, GY = -9;
+const lz = [...Array(NL)].map((_, i) => ({ sx: (i / (NL - 1) - .5) * 80, w: .4 + R() * .8, p: R() * 6.28, w2: .3 + R() * .6, p2: R() * 6.28, a: 16 + R() * 12 }));
+const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(NL * 6), 3));
+lg.setAttribute('aE', new THREE.BufferAttribute(new Float32Array(NL * 2).map((_, i) => i % 2), 1));
+const lmat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, uniforms: { uA: { value: 0 } },
+  vertexShader: `attribute float aE; varying float vE; void main(){ vE=aE; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader: `uniform float uA; varying float vE; void main(){ gl_FragColor=vec4(vec3(1.,.62,.3)*(.3+.9*vE)*uA,1.); }` });
+const lasers = new THREE.LineSegments(lg, lmat); lasers.frustumCulled = false; scene.add(lasers);
+const hits = [...Array(NL)].map(() => new THREE.Vector3());
+const fmat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, uniforms: { uT: { value: 0 }, uA: { value: 0 }, uHit: { value: hits } },
+  vertexShader: `varying vec3 vW; void main(){ vec4 w=modelMatrix*vec4(position,1.); vW=w.xyz; gl_Position=projectionMatrix*viewMatrix*w; }`,
+  fragmentShader: `uniform float uT,uA; uniform vec3 uHit[${NL}]; varying vec3 vW;
+    void main(){ vec2 q=vec2(vW.x,vW.z+uT*3.)/2.5; vec2 g=abs(fract(q)-.5); float line=1.-smoothstep(0.,.04,min(g.x,g.y));
+      float fade=exp(-length(vW.xz-vec2(0.,-10.))*.03); vec3 c=vec3(1.,.45,.15)*line*.25*fade;
+      for(int i=0;i<${NL};i++){ float d=length(vW.xz-uHit[i].xz); c+=vec3(1.,.5,.2)*(exp(-d*d*.8)*1.6+exp(-d*.4)*.12); }
+      gl_FragColor=vec4(c*uA,1.); }` });
+const lfloor = new THREE.Mesh(new THREE.PlaneGeometry(300, 300), fmat); lfloor.rotation.x = -Math.PI / 2; lfloor.position.y = GY; scene.add(lfloor);
+let laserA = 1;
+function updLasers(t) {
+  const p = lg.attributes.position.array;
+  lz.forEach((l, i) => { const T = hits[i].set(Math.sin(t * l.w + l.p) * l.a, GY, -10 + Math.sin(t * l.w2 + l.p2) * 14);
+    p.set([l.sx, 28, -60, T.x, T.y, T.z], i * 6); });
+  lg.attributes.position.needsUpdate = true;
+  lmat.uniforms.uA.value = laserA; fmat.uniforms.uA.value = laserA; fmat.uniforms.uT.value = t;
+}
+
+const BLUE = [0, 0, 2, 1, 0];   // 2 = split red/blue (twin)
+let cur = 0, target = 0, morphT0 = -10;
+function setShape(k) {
+  if (k === target) return;
+  const pa = g.attributes.pA.array, pb = g.attributes.pB.array, l = Math.min(1, mat.uniforms.uP.value);
+  for (let i = 0; i < pa.length; i++) pa[i] = pa[i] + (pb[i] - pa[i]) * (l >= 1 ? 1 : l);
+  pb.set(shapes[k]); g.attributes.pA.needsUpdate = g.attributes.pB.needsUpdate = true;
+  mat.uniforms.uBlueA.value = BLUE[target]; mat.uniforms.uBlueB.value = BLUE[k];
+  cur = target; target = k; mat.uniforms.uP.value = 0; morphT0 = performance.now();
+}
+function resize() { renderer.setSize(innerWidth, innerHeight, false); camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); mat.uniforms.uH.value = innerHeight; camera.position.z = innerWidth < innerHeight ? 58 : 34; }
+addEventListener('resize', resize); resize();
+let mx = 0, my = 0; addEventListener('pointermove', e => { mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; });
+let bB = 0;
+function loop(now) {
+  const t = now / 1000;
+  mat.uniforms.uT.value = t;
+  mat.uniforms.uP.value = Math.min(1.2, (now - morphT0) / 1600);
+  mat.uniforms.uDust.value = 0;
+  pts.rotation.z = target === 0 || target === 4 ? t * .05 : 0;
+  pts.rotation.y = target === 3 ? t * .12 : mx * .25;
+  pts.rotation.x = my * .15;
+  const tb = target === 3 ? 1 : 0; bB += (tb - bB) * .04; bgm.material.uniforms.uB.value = bB;
+  camera.position.x += (mx * 3 - camera.position.x) * .05; camera.position.y += (-my * 2 - camera.position.y) * .05; camera.lookAt(0, 0, 0);
+  laserA += ((target === 0 || target === 4 ? 1 : 0) - laserA) * .05; updLasers(t);
+  renderer.render(scene, camera);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+// section → particle shape
+const secs = [...document.querySelectorAll('section[data-shape]')];
+const pick = () => { let best = secs[0], bd = 1e9; for (const s of secs) { const r = s.getBoundingClientRect(), d = Math.abs(r.top + r.height / 2 - innerHeight / 2); if (d < bd) { bd = d; best = s; } } setShape(+best.dataset.shape); document.getElementById('nav').classList.toggle('solid', scrollY > 40); };
+addEventListener('scroll', pick, { passive: true }); pick();
+
+// reveal + counters (counters start from a non-zero value and animate immediately)
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in');
+  e.target.querySelectorAll('[data-count]').forEach(el => {
+    if (el.dataset.done) return; el.dataset.done = 1;
+    const to = +el.dataset.count, from = +el.dataset.from, t0 = performance.now(), d = 1400;
+    const step = now => { const p = Math.min(1, (now - t0) / d), v = from + (to - from) * (1 - Math.pow(1 - p, 3)); el.textContent = Math.max(from, Math.round(v)); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+  if (e.target.id === 'pay') e.target.classList.add('on');
+}), { threshold: .3 });
+document.querySelectorAll('.rv,#pay').forEach(el => io.observe(el));
+
+// custom player: progress bar only, no time readout
+{
+  const box = document.getElementById('film-box'), v = document.getElementById('fv'), prog = document.getElementById('fprog'), ppi = document.getElementById('fppi');
+  const PLAY = 'M2.5 1L9 5L2.5 9Z', PAUSE = 'M2 1H4V9H2ZM6 1H8V9H6Z';
+  const toggle = () => v.paused ? v.play() : v.pause();
+  document.getElementById('fplay').onclick = toggle; document.getElementById('fpp').onclick = toggle; v.onclick = toggle;
+  v.onplay = () => { box.classList.add('playing', 'started'); box.classList.remove('paused'); ppi.setAttribute('d', PAUSE); };
+  v.onpause = () => { box.classList.add('paused'); ppi.setAttribute('d', PLAY); };
+  v.onended = () => { box.classList.remove('playing', 'started', 'paused'); v.currentTime = 0.05; };
+  v.ontimeupdate = () => { prog.style.width = (v.duration ? v.currentTime / v.duration * 100 : 0) + '%'; };
+  document.getElementById('ftrack').onclick = e => { const r = e.currentTarget.getBoundingClientRect(); if (v.duration) v.currentTime = (e.clientX - r.left) / r.width * v.duration; };
+  document.getElementById('fmute').onclick = () => { v.muted = !v.muted; document.getElementById('fwave').style.opacity = v.muted ? .2 : 1; };
+  document.getElementById('ffs').onclick = () => (box.requestFullscreen || box.webkitRequestFullscreen).call(box);
+  document.querySelectorAll('a[href="#film"]').forEach(a => a.addEventListener('click', () => setTimeout(() => v.play().catch(() => {}), 700)));
+}
+
+{
+  const m = document.getElementById('qrm');
+  document.querySelectorAll('[data-qr]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); m.classList.add('on'); }));
+  m.addEventListener('click', e => { if (e.target === m || e.target.classList.contains('x')) m.classList.remove('on'); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') m.classList.remove('on'); });
+}
+})();
+</script>
+</body>
+</html>
